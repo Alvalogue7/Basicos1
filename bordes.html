@@ -6,21 +6,39 @@
     <title>Document</title>
     <style>
         /* probando bordes CSS */
-        h1 {color:rgb(103, 21, 21);
+        #titulo {color:rgb(103, 21, 21);
             text-align: center;
             border: 5px solid orangered;
             /* border-radius: 20px 40px 60px 80px; */
-            border-radius: 50%;
-            background-color: #ddd;}
-        #marco {border-left: 8px solid blue;
+            /* border-radius: 50%; */
+            background-color: #ddd;
+            box-shadow: 10px 10px 20px gray; /* sombra de caja, el primer numero es el desplazaminto horizontal, el segunda vertical y el tercer numero difuminado, el pixel en negativo cambia el foco de luz y por tanto la sombra */}
+        #marco {border-left: 8px solid navy;
                 background-color: rgb(175, 175, 219);}
         strong {border: 1px dotted red;}
+        #sombras {text-align: center;
+                    box-shadow: 5px 5px 15px orange,
+                                -5px 5px 15px orange,
+                                5px -5px 15px orange,
+                                -5px -5px 15px orange;}
+        #textosombra {text-align: center;
+                        /* text-shadow: -5px -10px 5px orange,
+                                        5px -10px 5px orange;} *//* texto en llamas */
+                    text-shadow: 1px 1px 0px fuchsia,
+                                -1px 1px 0px fuchsia,
+                                1px -1px 0px fuchsia,
+                                -1px -1px 0px fuchsia;
+                                color: white;}
     </style>
 </head>
 <body>
-    <h1> Lorem Ipsum dolor sit amet</h1>
+    <h1 id="titulo"> Lorem Ipsum dolor sit amet</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quasi laborum laboriosam et, nobis inventore voluptatibus aspernatur iure, maiores <strong>adipisci eligendi</strong> voluptatem consequatur repellat saepe, iste illo!</p>
     <p id="marco"> Nesciunt, vel iusto?ipsum dolor sit, amet consectetur adipisicing elit. Delectus voluptate vero nulla sunt sint quo voluptatem voluptates accusamus officiis alias in explicabo, tenetur asperiores id impedit suscipit? Sapiente, nemo non?</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla rem facere facilis aliquid repellat iste, dicta non maxime, eligendi sequi, necessitatibus voluptate quis. Laborum esse expedita repellat maxime temporibus impedit?</p>
+    <p></p>
+    <h1 id="sombras">Jugando con la sombra</h1>
+    <p></p>
+    <h1 id="textosombra">Texto con sombras</h1>
 </body>
 </html>
