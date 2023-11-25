@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        /* #wrapper {width: auto;} */
         /* probando bordes CSS */
         #titulo {color:rgb(103, 21, 21);
             text-align: center;
@@ -14,7 +15,9 @@
             background-color: #ddd;
             box-shadow: 10px 10px 20px gray; /* sombra de caja, el primer numero es el desplazaminto horizontal, el segunda vertical y el tercer numero difuminado, el pixel en negativo cambia el foco de luz y por tanto la sombra */}
         #marco {border-left: 8px solid navy;
-                background-color: rgb(175, 175, 219);}
+                background-color: rgb(175, 175, 219);
+                padding: 20px 10px;
+                margin: 20vw;}
         strong {border: 1px dotted red;}
         #sombras {text-align: center;
                     box-shadow: 5px 5px 15px orange,
@@ -32,13 +35,15 @@
     </style>
 </head>
 <body>
-    <h1 id="titulo"> Lorem Ipsum dolor sit amet</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quasi laborum laboriosam et, nobis inventore voluptatibus aspernatur iure, maiores <strong>adipisci eligendi</strong> voluptatem consequatur repellat saepe, iste illo!</p>
-    <p id="marco"> Nesciunt, vel iusto?ipsum dolor sit, amet consectetur adipisicing elit. Delectus voluptate vero nulla sunt sint quo voluptatem voluptates accusamus officiis alias in explicabo, tenetur asperiores id impedit suscipit? Sapiente, nemo non?</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla rem facere facilis aliquid repellat iste, dicta non maxime, eligendi sequi, necessitatibus voluptate quis. Laborum esse expedita repellat maxime temporibus impedit?</p>
-    <p></p>
-    <h1 id="sombras">Jugando con la sombra</h1>
-    <p></p>
-    <h1 id="textosombra">Texto con sombras</h1>
+    <div id="wrapper">
+        <h1 id="titulo"> Lorem Ipsum dolor sit amet</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quasi laborum laboriosam et, nobis inventore voluptatibus aspernatur iure, maiores <strong>adipisci eligendi</strong> voluptatem consequatur repellat saepe, iste illo!</p>
+        <p id="marco"> Nesciunt, vel iusto?ipsum dolor sit, amet consectetur adipisicing elit. Delectus voluptate vero nulla sunt sint quo voluptatem voluptates accusamus officiis alias in explicabo, tenetur asperiores id impedit suscipit? Sapiente, nemo non?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla rem facere facilis aliquid repellat iste, dicta non maxime, eligendi sequi, necessitatibus voluptate quis. Laborum esse expedita repellat maxime temporibus impedit?</p>
+        <p></p>
+        <h1 id="sombras">Jugando con la sombra</h1>
+        <p></p>
+        <h1 id="textosombra">Texto con sombras</h1>
+    </div>
 </body>
 </html>
